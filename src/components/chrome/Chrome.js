@@ -38,7 +38,7 @@ export class Chrome extends ReactCSS.Component {
           radius: '2px 2px 0 0',
         },
         body: {
-          padding: '16px 16px 12px',
+          padding: '16px 16px 9px',
         },
         controls: {
           display: 'flex',
@@ -47,7 +47,7 @@ export class Chrome extends ReactCSS.Component {
           width: '32px',
         },
         swatch: {
-          marginTop: '6px',
+          marginTop: '-3px',
           width: '16px',
           height: '16px',
           borderRadius: '8px',
@@ -105,12 +105,8 @@ export class Chrome extends ReactCSS.Component {
               <div is="hue">
                 <Hue is="Hue" {...this.props} pointer={ ChromePointer } onChange={ this.handleChange } />
               </div>
-              <div is="alpha">
-                <Alpha is="Alpha" {...this.props} pointer={ ChromePointer } onChange={ this.handleChange } />
-              </div>
             </div>
           </div>
-          <ChromeFields {...this.props} onChange={ this.handleChange } />
         </div>
       </div>
     );
